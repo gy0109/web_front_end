@@ -12,6 +12,8 @@
         <!-- 属性: border:边框  width:宽 height:高度  align: 设置表格在网页中的水平对齐方式  cellspacing:单元格与单元格边框之间的间距  cellpadding:单元格内容与单元格边框之间的边距-->
 
         <!-- caption: 表的标题  thead: 标的表头部分 tbody: 表体部分 -->
+
+        <!--rowspan: 跨行合并  colspan: 跨列合并 -->
         <caption><h3>好</h3></caption>
         <thead height='150'>
         <tr>
@@ -23,17 +25,15 @@
         <tbody>
         <tr>
             <td>1</td>
-            <td>2</td>
+            <td rowspan="2">2</td>
             <td>3</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>5</td>
             <td>6</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
+            <td colspan="2">7</td>
             <td>9</td>
         </tr>
         </tbody>
