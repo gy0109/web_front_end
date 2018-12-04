@@ -59,8 +59,51 @@
             <br>
              年周:
             <input type="week"><br>
+             颜色:
+            <input type="color">
+            <br>
             <input type="submit">
         </fielset>
     </form>
+
+    <!-- 
+        input新属性: 
+        placeholder: 占位符 提示信息
+        autofocus: 自动获取焦点
+        autocomplete:自动完成记录
+        multiple: 多文件上传
+        required: 必填项 内容不能为空
+        accesskey: 自动获得焦点光标 
+    -->
+
+    <form action="">
+        <fieldset>
+            <legend>学生档案</legend>
+            <label>姓名:
+            <input type="text" placeholder='请输入学生姓名'> </label>
+            <br>
+            <br>
+            <label>手机号码: 
+            <input type="tel" name="" id=""></label><br>
+            <br>
+            <label>性别: <input type="radio" value='sex'>男
+            <input type="radio" value='sex'>女</label> <br>
+            <br>
+            <label>学习科目: <input type="text" placeholder="请选择科目" list='subject' name="" id="">
+        <datalist id='subject'>
+            <option value="语文">语文</option>
+            <option value="数学">数学</option>
+            <option value="英语">英语</option>
+            <option value="物理">物理</option>
+        </datalist>
+        <br>
+        <br>
+        <label>出生日期:<input type="date"></label><br>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        </fieldset>
+
+        </form>
 </body>
 </html>
