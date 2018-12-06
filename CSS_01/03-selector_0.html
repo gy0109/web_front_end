@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器</title>
+
+    <style>
+    a:link{
+        font-size: 25px;
+    color: orange;
+    font-weight: 700
+    }
+    a:visited {
+        font-size: 25px;
+        color: yellow;
+        font-weight: 700
+    }
+    a:hover {
+        font-size: 25px;
+        color: red;
+        font-weight: 700
+    }
+    
+    a:active {
+        font-size: 25px;
+        color: blueviolet;
+        font-weight: 700
+    }
+    
+    li strong {
+        font-style: italic;
+        font-weight: normal
+    }
+    p:first-child {font-weight: bold;}
+    li:first-child {text-transform:uppercase;}
+     q:lang(no) { quotes: "~" "~" }
+     input:focus{
+         background-color: yellowgreen;
+         color: red;
+     }
+    </style>
+</head>
+<body>
+    伪类选择器的使用方法:
+    link:未访问
+    visited:访问过的连接
+    hover:鼠标停留   在link  visited之后
+    active: 选定的连接上 hover之后使用
+    first-child: 第一个子类元素
+    lang:为不同的语言定义特殊的规则  
+    focus:向拥有键盘输入焦点的元素添加样式。
+
+    <div>
+        <a href='#'>抢购</a>
+        <a href="#">秒杀</a>
+    </div>
+
+    <ol>
+        <strong>ol下的strong标签</strong>
+        <li><strong>在li标签中的strong标签 加了斜体</strong></li>
+        <li>正常字体</li>
+    </ol>
+
+    <div>
+        <p>These are the necessary steps:</p>
+        <ul>
+            <li>Intert Key</li>
+            <li>Turn key
+                <strong>clockwise</strong>
+            </li>
+            <li>Push accelerator</li>
+        </ul>
+        <p>Do
+            <em>not</em> push the brake at the same time as the accelerator.</p>
+    </div>
+    <p>文字
+        <q lang="no">段落中的引用的文字</q>文字</p>
+        <form action="">
+            姓名: <input type="text">
+            年龄:
+            <input type="text">
+            <input type="submit">
+        </form>
+    
+</body>
+</html>

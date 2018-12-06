@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构</title>
+    <style lang="">
+
+         li:first-child{   /*第一个 */
+            color: red;
+        }
+        li:last-child{     /* 最后一个 */
+            color: blueviolet;
+        }
+        li:nth-child(4){   /* n个 */
+            color: yellow
+        }
+        li:nth-last-child(6){ /* 倒数n个 */
+            color: rgb(155, 238, 130);
+        }
+        li:nth-child(even){   /* even: 偶数 odd:奇数 n:全部 2n 偶数 倍数 */
+            color: darkcyan;
+        }
+        li:nth-child(odd){
+            color: tomato
+        }
+
+        li:nth-child(n){
+            color: rgb(73, 100, 65)
+        }
+        li:nth-child(2n){
+            color: rgb(41, 10, 10)
+        }
+        li:nth-child(3n){
+            color: rgb(40, 30, 54)
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+    </ul>
+
+</body>
+</html>
