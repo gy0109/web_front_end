@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型</title>
+    <style lang="">
+        div {
+            width: 200px;
+            height: 200px;
+            border-width: 1px;    /* 边框粗细 */
+            border-color: brown; /* 边框颜色 */
+            border-style: solid; 
+        }
+
+        .user {
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-top-color: #000;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+            border-left-width: 2px;
+            border-left-style: solid;
+            border-left-color: green;
+            border-right-width: 2px;
+            border-right-style: solid;
+            border-right-color: yellow;
+        }
+        .nc {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid red;
+            border-left: 1px solid green;
+            border-right: 1px solid yellow;
+        }
+        .email {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    姓名:  <input type="text" class="user"><br><br>
+    昵称: <input type="text" class="nc"><br><br>
+    邮箱: <input type="email" class='email'><br><br>
+</body>
+</html>
