@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            color: aliceblue;
+            font-size: 23px;
+        }
+        
+        p {
+            font-family: serif;
+        }
+        .king {
+            color: aqua
+        }
+        div {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 样式冲突 就近原则   离结构近 就执行哪个样式 但是不会全部覆盖 只冲突的呗覆盖-->
+    <!-- 继承  子承父业  -->
+    <!-- 优先级  样式冲突时 选择器的权重决定显示谁 -->
+    <div>大家好 我要发红包;</div>
+    <div>
+        <p>习大大</p>
+    </div>
+    <div class="king">王者荣耀</div>
+</body>
+</html>
