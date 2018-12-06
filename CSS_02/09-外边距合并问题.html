@@ -24,7 +24,10 @@
             width: 400px;
             height: 400px;
             margin-top: 120px;
-            border: 1px solid #000;
+            /* 解决边框塌陷问题 */
+            /* border: 1px solid #000; */
+            /* overflow: hidden; */
+            padding: 1px;
     }
     .son {
             width: 200px;
