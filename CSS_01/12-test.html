@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .site-r a{
+        color: pink;
+    }
+    .nav a{   /* .nav ul li a{}*/
+        color: rgb(98, 98, 243);
+    }
+    body{    /* .nav, .sitenav {}*/
+        font-size: 14px;
+        font-family: 'microsoft yahei';
+        /* font: 'microsoft yahei', 14px */
+    }
+    .nav > ul > li > a {  /* 以及菜单*/
+        font-size: 18px;
+        color: crimson;
+    }
+    </style>
+</head>
+<body>
+    <!-- 主导航栏 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">公司首页</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">公司产品</a></li>
+            <li>
+                <a href="#">联系我们</a>
+                <ul>
+                    <li><a href="#">公司邮箱</a></li>
+                    <li><a href="#">公司电话</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- 侧导航栏 -->
+        <div class="sitenav">
+            <div class="site-l">左侧导航栏</div>
+            <div class="site-r"><a href='#'>登录</a></div>
+        </div>
+    </div>
+</body>
+</html>

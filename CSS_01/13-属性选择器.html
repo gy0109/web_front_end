@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13-属性选择器.html</title>
+    <style lang="">
+        a[title] {
+            color: aqua;
+        }
+        input[value] {
+            color: yellow;
+        }
+        input[type=submit] {
+            color: tomato;
+        }
+    div[class^=font] {
+        color: blueviolet;
+    }
+
+    div[class$=footer] {
+        color: rgb(43, 198, 226);
+    }
+
+    div[class*=jb] {
+        color: brown;
+    }
+
+    </style>
+</head>
+<body>
+    title: 鼠标悬停的时候会显示  格式: 标签[属性] :{}
+    class^=xxx :以xxx开头
+    class*=xxx :任意位置含xxx
+    class&=xxx :以xxx结尾的
+
+    <a href="#" title="'baidu'">百度</a>
+    <a href="#" title="sina">新浪</a>
+    <a href="#">淘宝</a>
+    <a href="#">网易</a>
+    <a href="#">土豆</a>
+    <a href="#">豆瓣</a>
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="submit">
+    <input type="button">
+    <input type="submit">
+
+    <div class="last">
+        <div class="font12">属性选择器</div>
+        <div class="font24">属性选择器</div>
+        <div class="font24">属性选择器</div>
+        <div class="font24">属性选择器</div>
+        <div class="sub-footer">属性选择器</div>
+        <div class="jb-footer">属性选择器</div>
+        <div class="news-jd-nav">属性选择器</div>
+        <div class="news-jd-header">属性选择器</div>
+    </div>
+</body>
+</html>

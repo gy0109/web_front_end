@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>组合选择器</title>
+    <style lang="" type='text/css'>
+        div {
+            color: aqua
+        }
+        .big {
+            color: blue
+        }
+        p.big {
+            font-size: 29px;
+        }
+        div.big {
+            font-size: 99px;
+        }
+        .two, .xiong, .mi, .hei{
+            color: chartreuse;
+        }
+
+        .father p{
+            color: pink;
+            font-size: 16px;
+        }
+        .nav li {    /* 空格 后代 子 孙都可以 */
+            color: red;
+        }
+
+        .nav > li{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    交集选择器: 都有的标签  
+    并集选择器: 集体声明  .two, .xiong, .mi, .he
+    后代选择器: 派生选择器
+    子类选择器; 
+
+    <div class="big">熊大</div>
+    <div class="two">熊二</div>
+    <div class="xiong">熊熊</div>
+    <p class="mi">小米</p>
+    <p class="big">小猫</p>
+    <p class="hei">小黑</p>
+
+    <div class="father">
+        <p>小小熊</p>
+    </div>
+
+    <div>
+        <ul class='nav'>
+            <li>二级菜单<li>孙子辈菜单</li></li>
+            <li>三级菜单</li>
+            <li>四级菜单</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
