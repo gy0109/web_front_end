@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凹凸文字</title>
+    <style>
+    div {
+        font-size: 80px;
+        font-family: '微软雅黑';
+        text-align: center;
+        background-color: #ccc;
+        color: #ccc;
+    }
+    div:first-child {
+        text-shadow: 1px 1px 1px #000, -1px -1px 1px #ffffff
+    }
+    div:last-child {
+        text-shadow: -1px -1px 1px #000000, 1px 1px 1px #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <div>凸起文字</div> 
+    <div>凹下文字</div>
+
+    
+</body>
+</html>
