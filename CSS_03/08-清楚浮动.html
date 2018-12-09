@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .box1 {
+            width: 600px;
+            background-color: pink;
+            /* overflow: hidden; */
+        }
+        .box2 {
+            width: 600px;
+            height: 240px;
+            background-color: purple;
+        }
+        .son1 {
+            width: 150px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+        .son2 {
+            width: 300px;
+            height: 100px;
+            background-color: gray;
+            float: left;
+        }
+        .clearfix:before, .clearfix:after {
+            content: '';
+            display: table;
+
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        /* .clearfix:after{
+            content: '.';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        } */
+        /* .clear {
+            clear: both;
+        } */
+        /* 清楚浮动的方法: clear:both  overflow:hidden .clearfix:after{display:block; content:'尽量不要为空';visiblity:hidden*/
+
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix
+    ">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="box2"></div>  
+</body>
+</html>
