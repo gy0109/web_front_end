@@ -12,15 +12,16 @@
             background-color: red;
             /* display: inline-block;    元素之间有缝隙 不便于使用 */
             float: left;
-            /* 无缝浮动对接 默认是左浮动 left right  none*/
+            /* 无缝浮动对接 默认是左浮动 left right  none   浮动时自动向最上面  就是浮动在别人上面  脱离标准流*/
         }
         div:nth-child(2) {
             background-color: yellow; 
             float: left;
         }
         div:last-child {
+            height: 300px;
             background-color: green;
-            float: right;
+            /* float: right; */
         }
 
     </style>

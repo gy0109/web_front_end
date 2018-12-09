@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .father {
+            width: 500px;
+            height: 300px;
+            background-color: red;
+            border: 10px solid red;
+            padding: 10px;
+        }
+        /* 浮动不会压父级的内边距 边框等范围 */
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: right;
+        }
+        section {
+            width: 800px;
+            height: 500px;
+            background-color:pink;
+        }
+        section .da {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* float: left; */
+        }
+        section .er {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        /* 兄弟级 第一个不浮动  第二个兄弟级在第一个下面开始浮动  只要有一个不浮动 就不在一行 */
+        .single {
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        .single_01 {
+            height: 200px;
+            background-color: pink;
+            float: left; 
+        }
+        /* /并排无缝隙 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <section>
+    <div class="da">
+    </div>
+    <div class="er"></div>
+    </section>
+    <div class="single">傻白熊</div>
+    <div class="single_01">傻白熊</div>
+</body>
+</html>
