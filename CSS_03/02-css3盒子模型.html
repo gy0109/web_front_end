@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div:first-child {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        /* w3c盒子模型 content-box 会把盒子撑大 
+        border-box 不会被撑大  padding 不会有影响*/
+        box-sizing: content-box;   
+        border: 5px solid red;  
+    }
+    div:last-child {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        /*  border-box 不会被撑大  padding 不会有影响*/
+        box-sizing: border-box;   
+        border: 5px solid yellow;  
+    }
+    h3 {
+        font-size: 100px;
+        text-shadow: 10px 3px 3px rgba(0, 0, 0, 0.5)
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        box-shadow: 5px, 5px 3px 4px rgba(0, 0, 0, 0.4);
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="box"></div>
+    <h3>稳住我们能赢</h3>
+    <div></div>
+</body>
+</html>

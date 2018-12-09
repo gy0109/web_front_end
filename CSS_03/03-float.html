@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* display: inline-block;    元素之间有缝隙 不便于使用 */
+            float: left;
+            /* 无缝浮动对接 默认是左浮动 left right  none*/
+        }
+        div:nth-child(2) {
+            background-color: yellow; 
+            float: left;
+        }
+        div:last-child {
+            background-color: green;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
