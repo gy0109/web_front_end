@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .father {
+            width: 800px;
+            height: 200px;
+            background-color: red;
+            margin: 40px auto;
+        }
+        .son {
+            width: 100px;
+            height: 40px;
+            background-color: green;
+            position: absolute;
+            margin: 40px auto;
+            /* left是基于浏览器进行的left左移 */
+            /* left: 400px;    */
+            /* 用公式计算走先谷底于父级的左移 */
+            left: 50%;
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -20px;
+        }
+        /* 定位的margin左右不管用 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
