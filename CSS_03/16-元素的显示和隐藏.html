@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        div:first-child {
+            /* 隐藏元素 不是被删除  只是看不见了  隐藏之后不保留位置 */
+            display: none;
+            /* visibility: hidden 隐藏元素  visible 显示元素 */
+            visibility: visible;   
+        }
+        div:last-child {
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+   display 和  visibility :
+   display:none, 不保留位置
+   visibility:  可见 保留位置
+   <div></div>
+   <div></div>
+</body>
+</html>
