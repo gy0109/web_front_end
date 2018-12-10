@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            width: 20px;
+            height: 400px;
+            border: 1px solid red;
+            overflow: auto;
+            /* auto:超出就显示滚动条  不超出不显示 
+            scroll:不管超不超出都不显示滚动条
+            hidden:超出直接切割掉 不要了
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>""" 使用 Python 去除一段文本中的连续的换行符 如输入： text\n\n\ntext\n\n\ntext """ my_str = 'text\n\n\ntext\n\n\ntext' print(my_str.replace('\n\n\n',
+        '\n'))
+</p>
+    </div>
+</body>
+</html>
