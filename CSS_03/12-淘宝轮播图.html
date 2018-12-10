@@ -38,11 +38,23 @@
         .circle {
             width: 66px;
             height: 13px;
-            background-color: gray;
+            background-color: rgb(17, 90, 158, 0.2);
             position: absolute;
             bottom: 15px;   /* 底边对齐 */
             left: 50%;
             margin-left: -33px;
+            border-radius: 6px;
+        }
+        .circle li {
+            width: 9px;
+            height: 9px;
+            background-color: #B7B7B7;
+            float: left;
+            margin: 2px;
+            border-radius: 50%;
+        }
+        .circle .current {
+            background-color: #f40;
         }
     </style>
 </head>
@@ -52,7 +64,7 @@
         <a href="#" class="arrow-l"><img src="./左三角.png" alt=""></a>
         <a href="#" class="arrow-r"><img src="./右三角.png" alt=""></a>
         <ul class="circle">
-            <li><a href=""></a></li>
+            <li class="current"><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
             <li><a href=""></a></li>
