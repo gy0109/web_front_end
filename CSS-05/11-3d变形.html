@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        section {
+            width: 450px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            background: url(./dNEBuK6.png) no-repeat;
+            position: relative;
+            perspective: 1000px;
+        }
+        .door-1, .door-2 {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            top: 0;
+            position: absolute;
+            transition: all 1s;
+        }
+        .door-1 {
+            left: 0;
+            border-right: 1px solid #000;
+            transform-origin: left;
+        }
+        .door-2 {
+            right: 0;
+            border-left: 1px solid #000;
+            transform-origin: right;
+        }
+        .door-1::before,
+        .door-2::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            transform: translateY(-50%px);
+        }
+        .door-1::before {
+            right: 5px;
+        }
+        .door-2::before {
+            left: 5px;
+        }
+        section:hover .door-1 {
+            transform: rotateY(-130deg);   
+        }
+        section:hover .door-2 {
+            transform: rotateY(130deg);   
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="door-1"></div>
+        <div class="door-2"></div>
+    </section>
+</body>
+
+</html>
