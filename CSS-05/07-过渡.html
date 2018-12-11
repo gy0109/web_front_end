@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: rebeccapurple;
+            /* margin: 100px auto; */
+            position: relative;
+            transition: width 0.5s ease 2s, height 0.5s e;
+        }
+        /* ::before ::after 伪类元素   在鼠标滑过之后添加属性  伪元素不占位用绝对定位*/
+        div:hover {
+            content: '';
+            width: 800px;
+            background-color: yellow;
+            display: block;
+            position: absolute;
+        }
+
+        /* transition: 过渡 (要过渡的属性  花费时间  运动曲线  何时开始)  transition-property  规定过渡的css属性   transition-duration: 话费多少时间transition-timing-function : ease 逐渐慢下来   tansform-何时开始*/
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+    </div>
+</body>
+</html>
