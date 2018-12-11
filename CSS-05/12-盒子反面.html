@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: go 2s ease 0s 6 reverse;  /* 引用动画 还需定义动画 */
+        }
+        /* 定义动画 */
+        @keyframes go {
+            /* 单组动画 */
+            /* from{
+                transform: translateX(0, 0);
+            }
+            to {
+                transform: translateX(800px, 0);
+            } */
+            /* 多组动画 */
+           0% {
+               transform: translate3d(0, 0, 0);
+           }
+           40% {
+               transform: translate3d(600px, 0, 0)
+           }
+           60% {
+            transform: translate3d(600px, 400px, 0)
+           }
+           80% {
+            transform: translate3d(0, 400px, 0)
+           }
+           100% {
+               transform: translate3d(0, 0, 0)
+           }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
