@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color:rebeccapurple;
+        position: absolute; 
+        left: 50%;
+        top: 50%;
+
+        /* 可以实现定位的定位的元素进行移动  但是如果父级改变 他也要重新计算  不合适 */
+        /* margin-left: -50px; */
+
+        /* 新的解决方法 */
+        transform: translate(-50%);
+    }
+    </style>
 </head>
 <body>
-    
+    <div></div>
 </body>
 </html>
