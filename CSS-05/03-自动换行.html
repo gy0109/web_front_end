@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style lang="">
-        div {
+        div:first-child {
             width: 20px;
             height: 20px;
             border: 1px solid #000;
@@ -14,11 +14,28 @@
             word-break: keep-all;
             /* break-all :拆开显示  keep-all 不拆开 在特殊字符或者空格处可以拆分 */
         }
+        .word {
+            width: 50px;
+            height: 20px;
+            border: 1px solid red;
+            white-space: nowrap;     
+            /* 不允许换行显示 */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* 超出部分用省略号显示  必须要先写强制一行显示 其次text-overflow  在加上overflow:hidden*/
+            
+            /* 加省略号 */
+        }
     </style>
 </head>
 <body>
    <div>
        fj khdsjkhfjdhgifddhvfu
+   </div>
+   <hr>
+   <hr>
+   <div class="word">
+       滴水未付IE返回热回复热
    </div>
 </body>
 </html>
